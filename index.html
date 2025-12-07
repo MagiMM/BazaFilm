@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>My favorite movies to watch</title>
+    <style>
+        body { font-family: "Times New Roman", serif; font-size: 18px; margin: 20px; }
+        h1 { font-size: 48px; margin-bottom: 10px; }
+        h2 { margin-top: 30px; margin-bottom: 10px; }
+        ul { list-style-type: disc; }
+        li { margin: 4px 0; }
+        .movie-item input[type="checkbox"] { margin-right: 6px; }
+        button { margin-top: 10px; padding: 4px 10px; }
+        .footer { margin-top: 40px; border-top: 1px solid #000; padding-top: 10px; }
+        .field-label { display: inline-block; width: 60px; }
+    </style>
+</head>
+<body>
+
+    <h1>My favorite movies to watch</h1>
+
+    <h2>Titles</h2>
+    <form>
+        <ul id="moviesList">
+            <li class="movie-item">
+                <label><input type="checkbox">The Matrix, 1999, Keanu Reeves, Laurence Fishburne</label>
+            </li>
+            <li class="movie-item">
+                <label><input type="checkbox">Indiana Jones, 1989, Harrison Ford, Sean Connery</label>
+            </li>
+            <li class="movie-item">
+                <label><input type="checkbox">Casino Royal, 2006, Daniel Craig, Eva Green</label>
+            </li>
+            <li class="movie-item">
+                <label><input type="checkbox">Forrest Gump, 1994, Tom Hanks, Robin Wright</label>
+            </li>
+        </ul>
+
+        <button type="button" onclick="deleteMovies()">Delete selected</button>
+    </form>
+
+    <h2>Add movie</h2>
+    <form>
+        <div>
+            <span class="field-label">Title:</span>
+            <input type="text" id="inputTitle">
+        </div>
+        <div>
+            <span class="field-label">Year:</span>
+            <input type="number" id="inputYear">
+        </div>
+        <div>
+            <span class="field-label">Actors:</span>
+            <input type="text" id="inputActors">
+        </div>
+        <button type="button" onclick="addMovie()">Add</button>
+    </form>
+
+    <div class="footer">
+        © My Movie Database. All rights reserved.
+    </div>
+
+    <!-- odwołanie do zewnętrznego pliku JS -->
+    <script src="script.js"></script>
+</body>
+</html>
