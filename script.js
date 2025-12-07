@@ -18,10 +18,9 @@ function addMovie() {
                    + movieTitle + ", " + movieYear + ", " + movieActors + "</label>";
 
     document.getElementById("moviesList").appendChild(li);
-
     document.getElementById("inputTitle").value  = "";
     document.getElementById("inputYear").value   = "";
-    document.getElementById("inputActors").value = "";
+    document.getElementById("inputActors").value = "";dd
 }
 
 function deleteMovies() {
