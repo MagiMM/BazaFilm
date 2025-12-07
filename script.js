@@ -20,7 +20,7 @@ function addMovie() {
     document.getElementById("moviesList").appendChild(li);
     document.getElementById("inputTitle").value  = "";
     document.getElementById("inputYear").value   = "";
-    document.getElementById("inputActors").value = "";dd
+    document.getElementById("inputActors").value = "";
 }
 
 function deleteMovies() {
