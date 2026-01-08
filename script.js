@@ -25,6 +25,7 @@ function addMovie() {
 
 function deleteMovies() {
     var checkedBoxes = document.querySelectorAll("input[type='checkbox']:checked");
+    console.log("checkedBoxes:", checkedBoxes);
     for (var i = 0; i < checkedBoxes.length; i++) {
         document.getElementById("moviesList")
                 .removeChild(checkedBoxes[i].parentNode.parentNode);

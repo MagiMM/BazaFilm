@@ -16,10 +16,16 @@ h2 {
 
 ul {
     list-style-type: disc;
+    list-style-position: inside;
 }
 
 li {
     margin: 4px 0;
+}
+
+.movie-item label {
+    display: inline-flex;
+    align-items: center;
 }
 
 .movie-item input[type="checkbox"] {
